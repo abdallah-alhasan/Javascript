@@ -10,8 +10,6 @@ function updatefontSize() {
   let div = document.getElementById('main')
   div.style.fontSize = Size;        
 }
-document.getElementById("underline").checked
-
 function isChecked(){
   let div = document.getElementById('main')
   if (document.getElementById("underline").checked){
