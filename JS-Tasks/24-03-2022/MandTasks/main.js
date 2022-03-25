@@ -138,11 +138,4 @@ function selectFromObject(obj, arr) {
     }
     return obj;
 }
-
-let obj1 = {
-    a: 1,
-    cat: 3,
-};
-let arr = ["a", "cat", "d"];
-
-console.log(selectFromObject(obj1, arr));
+console.log(selectFromObject({a: 1,cat: 3,} , ["a", "cat", "d"]));
