@@ -35,7 +35,7 @@ create.onclick = function () {
         myElement.setAttribute("id",`"innerDiv${i+1}"`)
         myElement.innerHTML = `${input[i].name}: ${localStorage.getItem(input[i].name)}`;
         containerDiv.appendChild(myElement);
-        containerDiv.style.background ="linear-gradient(to right top, #284c81, #004d7a, #008793, #00bf72, #a8eb12)"
+        containerDiv.style.background ="linear-gradient(40deg, #ff6ec4, #7873f5)"
     }
     myImg = document.createElement("img");
     myImg.setAttribute("src","../../Images/mock.png")

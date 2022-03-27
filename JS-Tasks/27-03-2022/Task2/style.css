@@ -4,7 +4,8 @@
   padding: 0;
 }
 body{
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);}
+  background-image:  linear-gradient(223deg, #000000, #7873f5);
+}
 .main , form{
     display: grid;
     grid-template-columns: auto;
@@ -28,7 +29,7 @@ select {
   height: 50px;
   width: 500px;
   border-radius: 25px;
-  background-image: linear-gradient(to right top, #284c81, #004d7a, #008793, #00bf72, #a8eb12);  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  background-image:linear-gradient(40deg, #ff6ec4, #7873f5);
   color: rgb(255, 255, 255);
   font-weight: bold;
   cursor: pointer;
@@ -62,7 +63,7 @@ select {
   width: 200px;
   height: 50px;
   border-radius: 25px;
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  background-image:linear-gradient(40deg, #ff6ec4, #7873f5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +88,7 @@ input:focus + label {
 
 /* Adding an outline to the label on focus */
 input:focus + label {
-  outline: 1px solid #000;
+  outline: 1px solid rgb(255, 255, 255);
   outline: -webkit-focus-ring-color auto 2px;
 }
 
