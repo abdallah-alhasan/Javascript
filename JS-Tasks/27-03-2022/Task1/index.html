@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <form action=""  onchange="checked()" >
+      <input type="text" name="name" class="input" placeholder="Enter your name" />
+      <input type="number" name="age" class="input" placeholder="Enter your age" />
+      <select name="gender" class="input" >
+        <option class="select" disabled selected>Please select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input type="text" name="discription" class="input" placeholder="Write about yourself" />
+      <input type="text" name="major" class="input" placeholder="Enter your major" />
+      <input type="text" name="university" class="input" placeholder="Enter your university" />
+      <input type="text" name="date of birth" class="input"  onfocus="(this.type = 'date')" placeholder="Your date of birth"  />
+      <div class="lan">
+        
+      <label for="HTML">HTML</label>
+      <input type="checkbox" name="HTML" id="HTML" class="input checkbox"  />
+      <label for="css">CSS</label>
+      <input type="checkbox" name="CSS" id="CSS" class="input checkbox"  />
+      <label for="JS">JS</label>
+      <input type="checkbox" name="JS" id="JS" class="input checkbox"  />
+      <label for="PHP">PHP</label>
+      <input type="checkbox" name="PHP" id="PHP" class="input checkbox"  />
+      <label for="C++">C++</label>
+      <input type="checkbox" name="C++" id="C++" class="input checkbox"  />
+      <label for="C#">C#</label>
+      <input type="checkbox" name="C#" id="C#" class="input checkbox"  />
+      </div>
+      <div class="file-input">
+        <input type="file" id="file" name="Image src" class="file img input">
+        <label for="file">
+          Select file
+          <p class="file-name" ></p>
+        </label>
+      </div>
+      <input type="number" name="number of sibling" class="input" placeholder="How many sibling do you have"/>
+      <input type="text" name="sibling disc" class="input" placeholder="Discribe your sibling"/>
+      <input type="button" name="create" value="Create"/>
+  </div>
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>

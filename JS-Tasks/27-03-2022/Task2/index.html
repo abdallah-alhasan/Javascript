@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <form action="" onchange="checked()">
+      <input type="text" name="Subject" class="input" placeholder="Write about your subject" value=" ecommerce website with an option of an exchange added." />
+      <input type="text" name="Description" class="input" placeholder="Enter a discription" value="User can offer an item or product he want's to exchange and also provide the item/s he needs the item to be exchanged with (just like opensooq but with an exchange option)" />
+      <input type="text" name="User Types" class="input" placeholder="User Types" />
+      <label for="">Technology used</label>
+      <div class="lan">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="HTML" id="HTML" class="input checkbox" checked />
+        <label for="css">CSS</label>
+        <input type="checkbox" name="CSS" id="CSS" class="input checkbox" checked />
+        <label for="JS">JS</label>
+        <input type="checkbox" name="JS" id="JS" class="input checkbox" checked />
+        <label for="PHP">PHP</label>
+        <input type="checkbox" name="PHP" id="PHP" class="input checkbox" />
+        <label for="C++">C++</label>
+        <input type="checkbox" name="C++" id="C++" class="input checkbox" />
+        <label for="C#">C#</label>
+        <input type="checkbox" name="C#" id="C#" class="input checkbox" />
+      </div>
+      <div class="file-input">
+        <input type="file" id="file" class="file img input">
+        <label for="file">
+          Image related to the topic
+          <p class="file-name"></p>
+        </label>
+      </div>
+      <input type="button" name="create" value="Create" />
+  </div>
+  </form>
+  <script src="main.js"></script>
+</body>
+
+</html>
