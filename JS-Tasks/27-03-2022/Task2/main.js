@@ -1,4 +1,3 @@
-sessionStorage.clear()
 let container = document.createElement("div")
 document.body.appendChild(container)
 container.setAttribute("class" , "container")
