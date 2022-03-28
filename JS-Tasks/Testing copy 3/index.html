@@ -1,49 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    *{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    form input , select{
-      display: block;
-      margin: 10px auto;
-      padding: 10px;
-      width: 50%;
-    }
-    .box{
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      width: 30%;
-      height: 50px;
-      background-color: orange;
-      margin: 10px;
-      padding: 10px;
-    }
-    [name ="create"]{
-      background-color: rgb(50, 252, 77);
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <form action="">
-    <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
-    <input type="text" name="texts" class="input" placeholder="Elements Text" />
-    <select name="type" class="input">
-      <option value="Div">Div</option>
-      <option value="Section">Section</option>
-    </select>
-    <input type="button" name="create" value="Create" />
-    <div class="results"></div>
-  </form>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    
+  </head>
+  <body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <script>
+      let myLink = document.querySelectorAll("a");
+      for (i = 0; i < myLink.length; i++) {
+        if ( myLink[i].classList.contains("open")  &&myLink[i].innerHTML === "Elzero") {
+          myLink = myLink[i];
+        }
+      }
+      console.log(myLink);
+    </script>
+  </body>
 </html>

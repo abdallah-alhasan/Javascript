@@ -1,4 +1,4 @@
-localStorage.clear()
+sessionStorage.clear()
 let container = document.createElement("div")
 document.body.appendChild(container)
 container.setAttribute("class" , "container")
@@ -29,11 +29,11 @@ let input = document.getElementsByClassName("input");
 create.onclick = function () {
     let myElement;
     for (i = 0; i < input.length; i++) {
-        localStorage.setItem(input[i].name, input[i].value);
+        sessionStorage.setItem(input[i].name, input[i].value);
         myElement = document.createElement("div");
         myElement.setAttribute("class","innerDivs")
         myElement.setAttribute("id",`"innerDiv${i+1}"`)
-        myElement.innerHTML = `${input[i].name}: ${localStorage.getItem(input[i].name)}`;
+        myElement.innerHTML = `${input[i].name}: ${sessionStorage.getItem(input[i].name)}`;
         containerDiv.appendChild(myElement);
         containerDiv.style.background ="linear-gradient(40deg, #ff6ec4, #7873f5)"
     }
