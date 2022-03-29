@@ -5,4 +5,3 @@ let cl = document.body.querySelectorAll("*")
             this.innerHTML = (`This is a ${this.localName}`)
         }
     }
-
