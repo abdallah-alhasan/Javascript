@@ -43,4 +43,3 @@ create.onclick = function () {
     myImg.setAttribute("alt","Can't upload photo from the local server");
     containerDiv.appendChild(myImg);
 };
-// console.log(document.getElementsByClassName("input")[0].name)
