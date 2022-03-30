@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-image:  linear-gradient(223deg, #000000, #7873f5);
+}
+label{
+  color: white;
+}
+.main , form{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 50px;
+}
+form input::placeholder{
+    color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+}
+form input , #submit{
+  padding: 10px;
+  height: 50px;
+  width: 500px;
+  border-radius: 25px;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+.main *{
+  margin-top: 10px;
+}
+.container {
+  display: grid;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 95px auto;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 30px;
+  gap: 25px;
+}
+
+input {
+    height: 12px;
+    margin: 32px;
+    width: fit-content;
+}
+
+span{
+  color: red;
+  display: none;
+}
+  </style>
+  <body>
+    <div class="container">
+      <form>
+        <label>First name</label>
+        <input type="text" class="form-control name" id="firstname" placeholder="Enter your first name" />
+        <span id="firstName">Please enter your first name</span>
+  
+        <label for="inputName">Last name</label>
+        <input type="text" class="form-control name" id="lastname" placeholder="Enter your last name" />
+        <span id="lastName">Please enter your last name</span>
+
+  
+        <label>Birthdate</label>
+        <input id="datepickerfrom" name="datepickerfrom" type="date" required />
+  
+        <label>Email</label>
+        <input type="email" class="form-control" id="email" placeholder="example@example.com" required="" />
+  
+        <label>Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password" required />
+        <span id="pass"> start with capital letter
+          having at least two numbers
+          at least one special character or symbol
+          </span>
+  
+        <label>Repeat Password</label>
+        <input type="password" class="form-control" id="Repeat" placeholder="Repeat password " required />
+        <span id="checkpass">Make sure the two passwords are identical</span>
+
+        <button id="submit" type="submit" >
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
